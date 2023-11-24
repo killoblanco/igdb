@@ -1,0 +1,26 @@
+{
+  "name": "@killoblanco/igdb",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/igdb.js",
+  "module": "dist/igdb.cjs",
+  "types": "dist/igdb.d.ts",
+  "scripts": {
+    "dev": "pnpm build --watch",
+    "build": "tsup lib/igdb.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "changeset": "changeset"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "@changesets/cli": "2.26.2",
+    "@tsconfig/recommended": "1.0.3",
+    "tsup": "8.0.1",
+    "typescript": "5.3.2"
+  }
+}
